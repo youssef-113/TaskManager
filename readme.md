@@ -1,6 +1,6 @@
-# 🧩 Task Manager – Full Stack Project (Native PHP + Vanilla JS)
+#  Task Manager – Full Stack Project (Native PHP + Vanilla JS)
 
-A full-stack Task Management application built with native PHP, MySQL, and a Vanilla JavaScript frontend. The project demonstrates session-based authentication, secure backend APIs, and a simple responsive frontend without using any frameworks.
+A full-stack Task Management application built with native PHP, MySQL, phpmyAdmin, and a Vanilla JavaScript frontend. The project demonstrates session-based authentication, secure backend APIs, and a simple responsive frontend without using any frameworks.
 
 ---
 
@@ -10,6 +10,8 @@ A full-stack Task Management application built with native PHP, MySQL, and a Van
 - **PHP 8+**
 - **MySQL**
 - **Apache (XAMPP)**
+- **phpMyAdmin**
+- **Web security**
 - **PDO** (prepared statements)
 - **Session-based authentication** (DB-backed)
 
