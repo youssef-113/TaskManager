@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasks</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./index.html"><span class="brand-badge"></span><span>TaskManager</span></a>
+      <nav class="nav-links">
+        <a class="btn btn-secondary" href="./tasks.html">Tasks</a>
+        <a class="btn" href="./create.html">Create Task</a>
+        <button class="btn btn-secondary" type="button" data-action="logout">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container stack">
+    <section class="card">
+      <div class="row">
+        <h1 class="h1">Your Tasks</h1>
+        <div class="right row">
+          <button class="btn btn-secondary" type="button" id="refreshBtn">Refresh</button>
+        </div>
+      </div>
+      <p class="muted">Create, update, and delete tasks.</p>
+      <div id="alert" class="alert" hidden></div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div>
+          <div class="label">Filter by status</div>
+          <select class="select" id="statusFilter">
+            <option value="all">All</option>
+            <option value="pending">Pending</option>
+            <option value="inProgress">In Progress</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+        <div class="right" style="min-width:260px; width: 100%; max-width: 420px;">
+          <div class="label">Search</div>
+          <input class="input" id="search" placeholder="Search title / description" />
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div style="overflow:auto;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 28%;">Title</th>
+              <th>Description</th>
+              <th style="width: 14%;">Status</th>
+              <th style="width: 18%;">Updated</th>
+              <th style="width: 18%;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tasksBody">
+            <tr><td colspan="5" class="muted">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="small muted" id="meta"></div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/tasks.js"></script>
+</body>
+</html>

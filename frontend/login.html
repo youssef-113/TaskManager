@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./index.html"><span class="brand-badge"></span><span>TaskManager</span></a>
+      <nav class="nav-links">
+        <a class="btn btn-secondary" href="./tasks.html">Tasks</a>
+        <a class="btn btn-secondary" href="./register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" style="max-width: 520px; margin: 20px auto;">
+      <h1 class="h1">Login</h1>
+      <p class="muted">This app uses a <code>sessionID</code> cookie set by the API.</p>
+      <div id="alert" class="alert" hidden></div>
+
+      <div class="spacer"></div>
+
+      <form id="form" class="stack">
+        <div>
+          <label class="label" for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div>
+          <label class="label" for="password">Password</label>
+          <input class="input" id="password" name="password" type="password" required autocomplete="current-password" />
+        </div>
+        <div class="row">
+          <button class="btn" id="loginBtn" type="submit">Login</button>
+          <a class="btn btn-secondary" href="./register.html">Create account</a>
+        </div>
+      </form>
+
+      <div class="spacer"></div>
+      <div class="small muted">If requests fail with CORS, make sure your frontend is served from <code>http://localhost:3000</code> (matches your API CORS config).</div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

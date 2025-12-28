@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./index.html"><span class="brand-badge"></span><span>TaskManager</span></a>
+      <nav class="nav-links">
+        <a class="btn btn-secondary" href="./login.html">Login</a>
+        <a class="btn btn-secondary" href="./tasks.html">Tasks</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" style="max-width: 560px; margin: 20px auto;">
+      <h1 class="h1">Register</h1>
+      <div id="alert" class="alert" hidden></div>
+
+      <div class="spacer"></div>
+
+      <form id="form" class="stack">
+        <div>
+          <label class="label" for="name">Name</label>
+          <input class="input" id="name" name="name" required autocomplete="name" />
+        </div>
+        <div>
+          <label class="label" for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div>
+          <label class="label" for="password">Password</label>
+          <input class="input" id="password" name="password" type="password" required autocomplete="new-password" />
+        </div>
+        <div class="row">
+          <button class="btn" id="registerBtn" type="submit">Register</button>
+          <a class="btn btn-secondary" href="./login.html">Back to Login</a>
+        </div>
+      </form>
+
+      <div class="spacer"></div>
+      <div class="small muted">After registering, you may still need to login to get the <code>sessionID</code> cookie used by task endpoints.</div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/register.js"></script>
+</body>
+</html>
