@@ -37,20 +37,22 @@ TaskManager/
 │   ├── register.php
 │   ├── login.php
 │   ├── logout.php
-│   ├── tasks/
-│   │   ├── create.php
-│   │   ├── list.php
-│   │   ├── update.php
-│   │   └── delete.php
-│
-├── config/
-│   └── database.php
+│   ├── db.php
+│   ├── create.php
+│   ├── list.php
+│   │── update.php
+│   │── delete.php
+
 │
 ├── frontend/
-│   ├── index.html        (Login / Register)
+│   ├── register.html        ( Register)
 │   ├── tasks.html        (Task Manager UI)
+│   ├── edit.html
+|   ├── index.html          ( Landing Page)
+│   ├── login.html          ( Login)
 │   ├── style.css
-│   └── app.js            (Frontend logic)
+│   └── js/
+|           (Frontend logic)
 │
 ├── screenshots/
 │   ├── backend/
